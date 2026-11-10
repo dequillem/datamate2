@@ -1,0 +1,49 @@
+{
+  "$defs": {
+    "ErrorInfo": {
+      "properties": {
+        "code": {
+          "description": "Mã lỗi máy đọc được, ví dụ: dataset_not_found",
+          "title": "Code",
+          "type": "string"
+        },
+        "details": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Details"
+        },
+        "message": {
+          "description": "Mô tả lỗi cho người đọc",
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "message",
+        "details"
+      ],
+      "title": "ErrorInfo",
+      "type": "object"
+    }
+  },
+  "description": "Envelope lỗi duy nhất của API (mọi status >= 400).",
+  "properties": {
+    "error": {
+      "$ref": "#/$defs/ErrorInfo"
+    }
+  },
+  "required": [
+    "error"
+  ],
+  "title": "ErrorResponse",
+  "type": "object"
+}

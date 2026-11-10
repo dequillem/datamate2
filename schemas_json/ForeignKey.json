@@ -1,0 +1,33 @@
+{
+  "properties": {
+    "column": {
+      "description": "Cột của bảng hiện tại",
+      "title": "Column",
+      "type": "string"
+    },
+    "ref_column": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Null nếu khoá ngoại trỏ ngầm tới khoá chính",
+      "title": "Ref Column"
+    },
+    "ref_table": {
+      "title": "Ref Table",
+      "type": "string"
+    }
+  },
+  "required": [
+    "column",
+    "ref_table",
+    "ref_column"
+  ],
+  "title": "ForeignKey",
+  "type": "object"
+}

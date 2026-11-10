@@ -1,0 +1,36 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "columns": {
+      "anyOf": [
+        {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Tên các cột cần xem chi tiết. Bỏ trống để xem tất cả.",
+      "title": "Columns"
+    },
+    "table": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Bảng cần xem. Bỏ trống để xem mọi bảng (bắt buộc nếu có `columns` và dataset nhiều bảng).",
+      "title": "Table"
+    }
+  },
+  "title": "DescribeDatasetInput",
+  "type": "object"
+}

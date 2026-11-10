@@ -1,0 +1,79 @@
+{
+  "description": "Đặc tả biểu đồ trung lập thư viện: frontend tự map sang Chart.js / ECharts / Recharts...",
+  "properties": {
+    "chart_type": {
+      "enum": [
+        "bar",
+        "line",
+        "pie",
+        "scatter"
+      ],
+      "title": "Chart Type",
+      "type": "string"
+    },
+    "color": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Cột phân nhóm màu/series, nếu có",
+      "title": "Color"
+    },
+    "data": {
+      "description": "Mỗi phần tử là một dòng: {tên_cột: giá_trị}",
+      "items": {
+        "additionalProperties": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "type": "object"
+      },
+      "title": "Data",
+      "type": "array"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "x": {
+      "description": "Tên cột trục x (hoặc nhãn với pie)",
+      "title": "X",
+      "type": "string"
+    },
+    "y": {
+      "description": "Tên cột trục y (giá trị số)",
+      "title": "Y",
+      "type": "string"
+    }
+  },
+  "required": [
+    "chart_type",
+    "title",
+    "x",
+    "y",
+    "color",
+    "data"
+  ],
+  "title": "ChartSpec",
+  "type": "object"
+}

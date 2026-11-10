@@ -1,0 +1,4 @@
+{"dataset_id": "sales", "question": "Có bao nhiêu đơn hàng?", "gold_sql": "SELECT COUNT(*) FROM sales"}
+{"dataset_id": "sales", "question": "Tổng doanh thu theo khu vực, cao đến thấp?", "gold_sql": "SELECT region, SUM(revenue) FROM sales GROUP BY region ORDER BY SUM(revenue) DESC"}
+{"dataset_id": "sales", "question": "Sản phẩm nào bán được nhiều nhất (theo số lượng)?", "gold_sql": "SELECT product FROM sales GROUP BY product ORDER BY SUM(quantity) DESC LIMIT 1"}
+{"dataset_id": "nhan_vien", "question": "Lương trung bình của từng phòng ban?", "gold_sql": "SELECT \"Phòng ban\", AVG(\"Lương (VND)\") FROM nhan_vien GROUP BY \"Phòng ban\""}

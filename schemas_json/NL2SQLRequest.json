@@ -1,0 +1,22 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "dataset_id": {
+      "description": "id lấy từ GET /api/v1/datasets",
+      "title": "Dataset Id",
+      "type": "string"
+    },
+    "question": {
+      "maxLength": 2000,
+      "minLength": 1,
+      "title": "Question",
+      "type": "string"
+    }
+  },
+  "required": [
+    "dataset_id",
+    "question"
+  ],
+  "title": "NL2SQLRequest",
+  "type": "object"
+}

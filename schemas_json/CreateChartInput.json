@@ -1,0 +1,57 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "chart_type": {
+      "enum": [
+        "bar",
+        "line",
+        "pie",
+        "scatter"
+      ],
+      "title": "Chart Type",
+      "type": "string"
+    },
+    "color": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Cột phân nhóm series, tuỳ chọn.",
+      "title": "Color"
+    },
+    "sql": {
+      "description": "Câu SELECT trả về các cột được nêu ở x, y (và color nếu có).",
+      "title": "Sql",
+      "type": "string"
+    },
+    "title": {
+      "default": "",
+      "description": "Tiêu đề biểu đồ.",
+      "title": "Title",
+      "type": "string"
+    },
+    "x": {
+      "description": "Cột dùng cho trục x (hoặc nhãn với pie).",
+      "title": "X",
+      "type": "string"
+    },
+    "y": {
+      "description": "Cột số dùng cho trục y (hoặc giá trị với pie).",
+      "title": "Y",
+      "type": "string"
+    }
+  },
+  "required": [
+    "sql",
+    "chart_type",
+    "x",
+    "y"
+  ],
+  "title": "CreateChartInput",
+  "type": "object"
+}

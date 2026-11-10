@@ -1,0 +1,401 @@
+order_id,order_date,region,category,product,channel,quantity,unit_price,revenue
+1,2025-01-01,Đà Nẵng,Laptop,ZBook Air,Online,2,24000000,48000000
+2,2025-01-01,TP. Hồ Chí Minh,Điện thoại,Zphone X,Online,3,12000000,36000000
+3,2025-01-02,Hải Phòng,Phụ kiện,Sạc nhanh 65W,Cửa hàng,2,450000,900000
+4,2025-01-02,Cần Thơ,Điện thoại,Zphone X,Đại lý,3,12000000,36000000
+5,2025-01-03,Đà Nẵng,Laptop,ZBook Air,Đại lý,2,24000000,48000000
+6,2025-01-03,TP. Hồ Chí Minh,Điện thoại,Zphone Lite,Cửa hàng,4,5500000,22000000
+7,2025-01-04,Đà Nẵng,Điện thoại,Zphone X,Online,1,12000000,12000000
+8,2025-01-05,Hải Phòng,Điện thoại,Zphone Lite,Cửa hàng,2,5500000,11000000
+9,2025-01-06,Hải Phòng,Laptop,ZBook Air,Đại lý,1,24000000,24000000
+10,2025-01-07,Đà Nẵng,Phụ kiện,Ốp lưng,Đại lý,3,150000,450000
+11,2025-01-07,Cần Thơ,Điện thoại,Zphone X,,2,12000000,24000000
+12,2025-01-09,Hà Nội,Điện thoại,Zphone Lite,Online,5,5500000,27500000
+13,2025-01-10,Hải Phòng,Phụ kiện,Ốp lưng,Đại lý,1,150000,150000
+14,2025-01-10,Hà Nội,Phụ kiện,Sạc nhanh 65W,Online,2,450000,900000
+15,2025-01-10,Hà Nội,Phụ kiện,Tai nghe Z1,Cửa hàng,1,900000,900000
+16,2025-01-11,Đà Nẵng,Phụ kiện,Sạc nhanh 65W,Cửa hàng,1,450000,450000
+17,2025-01-11,Cần Thơ,Điện thoại,Zphone Lite,Online,3,5500000,16500000
+18,2025-01-12,TP. Hồ Chí Minh,Laptop,ZBook Air,Online,5,24000000,120000000
+19,2025-01-12,Đà Nẵng,Laptop,ZBook Air,Đại lý,1,24000000,24000000
+20,2025-01-14,Hải Phòng,Laptop,ZBook Air,Đại lý,1,24000000,24000000
+21,2025-01-16,TP. Hồ Chí Minh,Laptop,ZBook 14,Online,5,18500000,92500000
+22,2025-01-17,Đà Nẵng,Laptop,ZBook Air,Cửa hàng,3,24000000,72000000
+23,2025-01-20,Cần Thơ,Phụ kiện,Ốp lưng,Online,5,150000,750000
+24,2025-01-20,Hải Phòng,Laptop,ZBook Air,Online,5,24000000,120000000
+25,2025-01-21,Đà Nẵng,Laptop,ZBook Air,Đại lý,4,24000000,96000000
+26,2025-01-22,TP. Hồ Chí Minh,Điện thoại,Zphone Lite,Online,1,5500000,5500000
+27,2025-01-23,Cần Thơ,Phụ kiện,Sạc nhanh 65W,Đại lý,5,450000,2250000
+28,2025-01-24,Đà Nẵng,Laptop,ZBook Air,Cửa hàng,1,24000000,24000000
+29,2025-01-24,Đà Nẵng,Laptop,ZBook Air,Cửa hàng,4,24000000,96000000
+30,2025-01-24,Cần Thơ,Phụ kiện,Ốp lưng,Cửa hàng,3,150000,450000
+31,2025-01-25,Cần Thơ,Điện thoại,Zphone X,Đại lý,5,12000000,60000000
+32,2025-01-25,Hải Phòng,Laptop,ZBook Air,Cửa hàng,5,24000000,120000000
+33,2025-01-26,Hải Phòng,Phụ kiện,Tai nghe Z1,Online,2,900000,1800000
+34,2025-01-27,TP. Hồ Chí Minh,Phụ kiện,Tai nghe Z1,Đại lý,4,900000,3600000
+35,2025-01-27,Hà Nội,Phụ kiện,Sạc nhanh 65W,Đại lý,1,450000,450000
+36,2025-01-28,Đà Nẵng,Phụ kiện,Ốp lưng,Cửa hàng,5,150000,750000
+37,2025-01-29,Hà Nội,Điện thoại,Zphone X,Online,1,12000000,12000000
+38,2025-01-30,Hà Nội,Laptop,ZBook Air,Cửa hàng,1,24000000,24000000
+39,2025-01-30,TP. Hồ Chí Minh,Phụ kiện,Tai nghe Z1,Online,4,900000,3600000
+40,2025-01-31,TP. Hồ Chí Minh,Phụ kiện,Tai nghe Z1,Online,3,900000,2700000
+41,2025-02-01,Cần Thơ,Điện thoại,Zphone Lite,Đại lý,4,5500000,22000000
+42,2025-02-03,Đà Nẵng,Laptop,ZBook Air,Cửa hàng,4,24000000,96000000
+43,2025-02-05,Cần Thơ,Điện thoại,Zphone Lite,Cửa hàng,1,5500000,5500000
+44,2025-02-05,Cần Thơ,Laptop,ZBook Air,Cửa hàng,2,24000000,48000000
+45,2025-02-06,Hải Phòng,Điện thoại,Zphone Lite,Đại lý,3,5500000,16500000
+46,2025-02-07,Hà Nội,Laptop,ZBook 14,Cửa hàng,4,18500000,74000000
+47,2025-02-07,Cần Thơ,Điện thoại,Zphone X,Cửa hàng,3,12000000,36000000
+48,2025-02-08,Cần Thơ,Điện thoại,Zphone X,Online,3,12000000,36000000
+49,2025-02-10,Đà Nẵng,Phụ kiện,Tai nghe Z1,Đại lý,1,900000,900000
+50,2025-02-10,Cần Thơ,Phụ kiện,Sạc nhanh 65W,Đại lý,2,450000,900000
+51,2025-02-11,TP. Hồ Chí Minh,Điện thoại,Zphone X,Online,1,12000000,12000000
+52,2025-02-13,Cần Thơ,Phụ kiện,Ốp lưng,Online,3,150000,450000
+53,2025-02-13,Hải Phòng,Điện thoại,Zphone X,Đại lý,3,12000000,36000000
+54,2025-02-13,Đà Nẵng,Điện thoại,Zphone Lite,Online,3,5500000,16500000
+55,2025-02-13,Đà Nẵng,Điện thoại,Zphone Lite,Online,1,5500000,5500000
+56,2025-02-15,TP. Hồ Chí Minh,Laptop,ZBook 14,Đại lý,5,18500000,92500000
+57,2025-02-16,Cần Thơ,Laptop,ZBook Air,Đại lý,4,24000000,96000000
+58,2025-02-16,Hải Phòng,Điện thoại,Zphone Lite,Đại lý,4,5500000,22000000
+59,2025-02-16,Hà Nội,Phụ kiện,Sạc nhanh 65W,Cửa hàng,2,450000,900000
+60,2025-02-16,Đà Nẵng,Điện thoại,Zphone Lite,Đại lý,4,5500000,22000000
+61,2025-02-17,Hà Nội,Điện thoại,Zphone Lite,Đại lý,1,5500000,5500000
+62,2025-02-17,Cần Thơ,Điện thoại,Zphone Lite,Cửa hàng,5,5500000,27500000
+63,2025-02-17,TP. Hồ Chí Minh,Điện thoại,Zphone X,Cửa hàng,4,12000000,48000000
+64,2025-02-18,Hải Phòng,Phụ kiện,Ốp lưng,Online,2,150000,300000
+65,2025-02-20,Cần Thơ,Phụ kiện,Sạc nhanh 65W,Cửa hàng,5,450000,2250000
+66,2025-02-23,Hà Nội,Điện thoại,Zphone X,Đại lý,1,12000000,12000000
+67,2025-02-24,Cần Thơ,Điện thoại,Zphone Lite,Online,1,5500000,5500000
+68,2025-02-24,Hà Nội,Điện thoại,Zphone Lite,Đại lý,2,5500000,11000000
+69,2025-02-25,Cần Thơ,Điện thoại,Zphone Lite,Đại lý,5,5500000,27500000
+70,2025-02-26,Hải Phòng,Laptop,ZBook Air,Cửa hàng,4,24000000,96000000
+71,2025-02-27,Hà Nội,Phụ kiện,Sạc nhanh 65W,,1,450000,450000
+72,2025-02-27,TP. Hồ Chí Minh,Phụ kiện,Tai nghe Z1,Online,1,900000,900000
+73,2025-02-28,Hải Phòng,Laptop,ZBook 14,Đại lý,3,18500000,55500000
+74,2025-02-28,TP. Hồ Chí Minh,Phụ kiện,Sạc nhanh 65W,Đại lý,4,450000,1800000
+75,2025-03-01,TP. Hồ Chí Minh,Phụ kiện,Tai nghe Z1,Cửa hàng,1,900000,900000
+76,2025-03-01,Hải Phòng,Phụ kiện,Ốp lưng,Cửa hàng,3,150000,450000
+77,2025-03-02,Đà Nẵng,Laptop,ZBook Air,Cửa hàng,3,24000000,72000000
+78,2025-03-02,Cần Thơ,Điện thoại,Zphone X,Đại lý,3,12000000,36000000
+79,2025-03-03,Hải Phòng,Điện thoại,Zphone X,Đại lý,2,12000000,24000000
+80,2025-03-03,Đà Nẵng,Phụ kiện,Sạc nhanh 65W,Đại lý,4,450000,1800000
+81,2025-03-04,Cần Thơ,Laptop,ZBook Air,Đại lý,3,24000000,72000000
+82,2025-03-04,Hà Nội,Điện thoại,Zphone X,Đại lý,5,12000000,60000000
+83,2025-03-04,Hà Nội,Laptop,ZBook 14,Cửa hàng,4,18500000,74000000
+84,2025-03-04,Đà Nẵng,Phụ kiện,Sạc nhanh 65W,Cửa hàng,3,450000,1350000
+85,2025-03-04,Đà Nẵng,Laptop,ZBook 14,Cửa hàng,3,18500000,55500000
+86,2025-03-05,Đà Nẵng,Điện thoại,Zphone X,Cửa hàng,3,12000000,36000000
+87,2025-03-07,Hà Nội,Laptop,ZBook 14,Cửa hàng,1,18500000,18500000
+88,2025-03-07,TP. Hồ Chí Minh,Điện thoại,Zphone X,Đại lý,2,12000000,24000000
+89,2025-03-08,Hải Phòng,Điện thoại,Zphone Lite,Đại lý,1,5500000,5500000
+90,2025-03-09,Hải Phòng,Phụ kiện,Tai nghe Z1,Đại lý,2,900000,1800000
+91,2025-03-10,Hà Nội,Phụ kiện,Ốp lưng,,5,150000,750000
+92,2025-03-10,TP. Hồ Chí Minh,Điện thoại,Zphone X,Cửa hàng,5,12000000,60000000
+93,2025-03-10,Hà Nội,Laptop,ZBook Air,Online,2,24000000,48000000
+94,2025-03-11,Hải Phòng,Laptop,ZBook 14,Đại lý,5,18500000,92500000
+95,2025-03-12,Cần Thơ,Phụ kiện,Sạc nhanh 65W,Đại lý,1,450000,450000
+96,2025-03-13,Cần Thơ,Phụ kiện,Sạc nhanh 65W,Online,5,450000,2250000
+97,2025-03-13,Cần Thơ,Phụ kiện,Tai nghe Z1,Online,3,900000,2700000
+98,2025-03-15,Hải Phòng,Laptop,ZBook 14,Cửa hàng,1,18500000,18500000
+99,2025-03-15,Hà Nội,Điện thoại,Zphone Lite,Đại lý,5,5500000,27500000
+100,2025-03-15,Cần Thơ,Phụ kiện,Ốp lưng,Online,3,150000,450000
+101,2025-03-16,Đà Nẵng,Laptop,ZBook 14,Cửa hàng,5,18500000,92500000
+102,2025-03-16,Hải Phòng,Điện thoại,Zphone Lite,Cửa hàng,5,5500000,27500000
+103,2025-03-18,Hải Phòng,Phụ kiện,Ốp lưng,Cửa hàng,1,150000,150000
+104,2025-03-21,Đà Nẵng,Phụ kiện,Tai nghe Z1,Cửa hàng,1,900000,900000
+105,2025-03-22,Đà Nẵng,Điện thoại,Zphone X,Đại lý,3,12000000,36000000
+106,2025-03-22,Cần Thơ,Phụ kiện,Ốp lưng,Đại lý,3,150000,450000
+107,2025-03-23,Hải Phòng,Điện thoại,Zphone X,Đại lý,4,12000000,48000000
+108,2025-03-23,Cần Thơ,Laptop,ZBook Air,Online,3,24000000,72000000
+109,2025-03-26,Hải Phòng,Điện thoại,Zphone X,Cửa hàng,2,12000000,24000000
+110,2025-03-26,Hải Phòng,Laptop,ZBook 14,Đại lý,5,18500000,92500000
+111,2025-03-29,Cần Thơ,Phụ kiện,Tai nghe Z1,Online,5,900000,4500000
+112,2025-03-29,TP. Hồ Chí Minh,Phụ kiện,Tai nghe Z1,Online,4,900000,3600000
+113,2025-03-29,TP. Hồ Chí Minh,Phụ kiện,Ốp lưng,Cửa hàng,5,150000,750000
+114,2025-03-30,TP. Hồ Chí Minh,Phụ kiện,Tai nghe Z1,Online,1,900000,900000
+115,2025-03-30,Hải Phòng,Phụ kiện,Sạc nhanh 65W,Online,3,450000,1350000
+116,2025-03-31,Cần Thơ,Phụ kiện,Tai nghe Z1,Online,3,900000,2700000
+117,2025-03-31,TP. Hồ Chí Minh,Điện thoại,Zphone X,Đại lý,2,12000000,24000000
+118,2025-04-02,TP. Hồ Chí Minh,Điện thoại,Zphone Lite,Đại lý,3,5500000,16500000
+119,2025-04-02,Hà Nội,Điện thoại,Zphone X,Đại lý,4,12000000,48000000
+120,2025-04-03,Cần Thơ,Điện thoại,Zphone X,Cửa hàng,4,12000000,48000000
+121,2025-04-03,Hà Nội,Điện thoại,Zphone Lite,Đại lý,2,5500000,11000000
+122,2025-04-03,Hà Nội,Điện thoại,Zphone Lite,Online,2,5500000,11000000
+123,2025-04-03,Hải Phòng,Phụ kiện,Tai nghe Z1,Cửa hàng,3,900000,2700000
+124,2025-04-04,Cần Thơ,Laptop,ZBook Air,Cửa hàng,4,24000000,96000000
+125,2025-04-06,Đà Nẵng,Điện thoại,Zphone Lite,Cửa hàng,3,5500000,16500000
+126,2025-04-07,TP. Hồ Chí Minh,Phụ kiện,Ốp lưng,Online,3,150000,450000
+127,2025-04-08,TP. Hồ Chí Minh,Laptop,ZBook Air,Cửa hàng,3,24000000,72000000
+128,2025-04-08,TP. Hồ Chí Minh,Phụ kiện,Tai nghe Z1,Cửa hàng,5,900000,4500000
+129,2025-04-09,Hà Nội,Laptop,ZBook 14,Đại lý,4,18500000,74000000
+130,2025-04-10,Hải Phòng,Laptop,ZBook Air,Cửa hàng,4,24000000,96000000
+131,2025-04-10,Cần Thơ,Điện thoại,Zphone Lite,Online,1,5500000,5500000
+132,2025-04-11,Đà Nẵng,Điện thoại,Zphone Lite,Đại lý,2,5500000,11000000
+133,2025-04-13,TP. Hồ Chí Minh,Laptop,ZBook Air,,1,24000000,24000000
+134,2025-04-15,Hà Nội,Phụ kiện,Tai nghe Z1,Đại lý,3,900000,2700000
+135,2025-04-15,Hải Phòng,Phụ kiện,Ốp lưng,Online,2,150000,300000
+136,2025-04-15,Cần Thơ,Phụ kiện,Ốp lưng,Đại lý,4,150000,600000
+137,2025-04-17,Cần Thơ,Điện thoại,Zphone Lite,Cửa hàng,5,5500000,27500000
+138,2025-04-19,Đà Nẵng,Điện thoại,Zphone X,Cửa hàng,4,12000000,48000000
+139,2025-04-19,Hà Nội,Phụ kiện,Ốp lưng,Cửa hàng,4,150000,600000
+140,2025-04-20,Cần Thơ,Điện thoại,Zphone X,Online,3,12000000,36000000
+141,2025-04-21,Đà Nẵng,Laptop,ZBook 14,Đại lý,3,18500000,55500000
+142,2025-04-21,TP. Hồ Chí Minh,Điện thoại,Zphone X,Đại lý,2,12000000,24000000
+143,2025-04-22,Hà Nội,Laptop,ZBook 14,Online,2,18500000,37000000
+144,2025-04-22,Hà Nội,Điện thoại,Zphone Lite,Cửa hàng,3,5500000,16500000
+145,2025-04-22,Đà Nẵng,Điện thoại,Zphone Lite,Cửa hàng,4,5500000,22000000
+146,2025-04-23,Hà Nội,Điện thoại,Zphone Lite,Online,2,5500000,11000000
+147,2025-04-24,Hà Nội,Phụ kiện,Tai nghe Z1,Cửa hàng,3,900000,2700000
+148,2025-04-25,Cần Thơ,Laptop,ZBook 14,Đại lý,5,18500000,92500000
+149,2025-04-25,Hà Nội,Laptop,ZBook 14,Cửa hàng,2,18500000,37000000
+150,2025-04-26,Hải Phòng,Laptop,ZBook Air,Đại lý,4,24000000,96000000
+151,2025-04-27,Đà Nẵng,Phụ kiện,Ốp lưng,Đại lý,1,150000,150000
+152,2025-04-27,Cần Thơ,Laptop,ZBook 14,Đại lý,2,18500000,37000000
+153,2025-04-28,TP. Hồ Chí Minh,Điện thoại,Zphone X,Đại lý,4,12000000,48000000
+154,2025-04-30,Hải Phòng,Phụ kiện,Sạc nhanh 65W,Cửa hàng,3,450000,1350000
+155,2025-04-30,TP. Hồ Chí Minh,Phụ kiện,Tai nghe Z1,Online,1,900000,900000
+156,2025-05-01,TP. Hồ Chí Minh,Laptop,ZBook 14,Đại lý,1,18500000,18500000
+157,2025-05-02,Cần Thơ,Phụ kiện,Ốp lưng,Đại lý,5,150000,750000
+158,2025-05-02,TP. Hồ Chí Minh,Điện thoại,Zphone X,Online,3,12000000,36000000
+159,2025-05-03,Hải Phòng,Phụ kiện,Tai nghe Z1,Cửa hàng,4,900000,3600000
+160,2025-05-03,Đà Nẵng,Laptop,ZBook Air,Online,3,24000000,72000000
+161,2025-05-04,TP. Hồ Chí Minh,Điện thoại,Zphone X,Đại lý,4,12000000,48000000
+162,2025-05-04,Hà Nội,Điện thoại,Zphone X,Cửa hàng,5,12000000,60000000
+163,2025-05-07,Hà Nội,Laptop,ZBook 14,Đại lý,5,18500000,92500000
+164,2025-05-08,Hải Phòng,Laptop,ZBook 14,Online,4,18500000,74000000
+165,2025-05-08,Cần Thơ,Phụ kiện,Ốp lưng,Online,5,150000,750000
+166,2025-05-09,Hà Nội,Laptop,ZBook Air,Online,3,24000000,72000000
+167,2025-05-09,Cần Thơ,Laptop,ZBook Air,,3,24000000,72000000
+168,2025-05-09,Hà Nội,Phụ kiện,Sạc nhanh 65W,Online,3,450000,1350000
+169,2025-05-10,Cần Thơ,Điện thoại,Zphone Lite,Cửa hàng,3,5500000,16500000
+170,2025-05-12,Đà Nẵng,Điện thoại,Zphone Lite,Online,5,5500000,27500000
+171,2025-05-13,Hà Nội,Laptop,ZBook Air,Online,1,24000000,24000000
+172,2025-05-14,Đà Nẵng,Laptop,ZBook Air,Cửa hàng,2,24000000,48000000
+173,2025-05-14,Đà Nẵng,Laptop,ZBook Air,Đại lý,5,24000000,120000000
+174,2025-05-14,Hà Nội,Điện thoại,Zphone Lite,Cửa hàng,2,5500000,11000000
+175,2025-05-16,TP. Hồ Chí Minh,Điện thoại,Zphone Lite,Cửa hàng,3,5500000,16500000
+176,2025-05-17,Hải Phòng,Phụ kiện,Tai nghe Z1,Online,1,900000,900000
+177,2025-05-17,Cần Thơ,Điện thoại,Zphone X,,3,12000000,36000000
+178,2025-05-18,Hải Phòng,Điện thoại,Zphone Lite,Cửa hàng,5,5500000,27500000
+179,2025-05-18,TP. Hồ Chí Minh,Laptop,ZBook 14,Online,5,18500000,92500000
+180,2025-05-18,Hải Phòng,Điện thoại,Zphone X,Đại lý,5,12000000,60000000
+181,2025-05-19,Cần Thơ,Điện thoại,Zphone Lite,Online,2,5500000,11000000
+182,2025-05-19,TP. Hồ Chí Minh,Laptop,ZBook Air,Online,4,24000000,96000000
+183,2025-05-19,TP. Hồ Chí Minh,Laptop,ZBook 14,Đại lý,1,18500000,18500000
+184,2025-05-21,Cần Thơ,Laptop,ZBook 14,Đại lý,4,18500000,74000000
+185,2025-05-21,TP. Hồ Chí Minh,Laptop,ZBook Air,Online,1,24000000,24000000
+186,2025-05-22,Hải Phòng,Điện thoại,Zphone X,Cửa hàng,1,12000000,12000000
+187,2025-05-22,Cần Thơ,Điện thoại,Zphone Lite,Online,2,5500000,11000000
+188,2025-05-24,Hải Phòng,Phụ kiện,Tai nghe Z1,Đại lý,1,900000,900000
+189,2025-05-24,Hà Nội,Laptop,ZBook 14,Đại lý,1,18500000,18500000
+190,2025-05-26,Đà Nẵng,Điện thoại,Zphone Lite,Đại lý,3,5500000,16500000
+191,2025-05-26,Hải Phòng,Laptop,ZBook Air,Cửa hàng,1,24000000,24000000
+192,2025-05-26,Đà Nẵng,Laptop,ZBook Air,Online,5,24000000,120000000
+193,2025-05-26,Cần Thơ,Laptop,ZBook 14,Đại lý,3,18500000,55500000
+194,2025-05-27,Cần Thơ,Laptop,ZBook Air,Cửa hàng,3,24000000,72000000
+195,2025-05-27,Cần Thơ,Điện thoại,Zphone Lite,Đại lý,3,5500000,16500000
+196,2025-05-28,Cần Thơ,Phụ kiện,Ốp lưng,Đại lý,3,150000,450000
+197,2025-05-29,Hà Nội,Điện thoại,Zphone Lite,Cửa hàng,3,5500000,16500000
+198,2025-05-30,Đà Nẵng,Phụ kiện,Tai nghe Z1,Cửa hàng,2,900000,1800000
+199,2025-05-31,Hải Phòng,Phụ kiện,Tai nghe Z1,Cửa hàng,3,900000,2700000
+200,2025-05-31,TP. Hồ Chí Minh,Điện thoại,Zphone X,Đại lý,1,12000000,12000000
+201,2025-06-01,Hà Nội,Phụ kiện,Tai nghe Z1,Online,3,900000,2700000
+202,2025-06-01,Hà Nội,Điện thoại,Zphone Lite,Online,2,5500000,11000000
+203,2025-06-02,Hà Nội,Điện thoại,Zphone Lite,Cửa hàng,1,5500000,5500000
+204,2025-06-04,Hà Nội,Điện thoại,Zphone Lite,Cửa hàng,3,5500000,16500000
+205,2025-06-04,TP. Hồ Chí Minh,Điện thoại,Zphone X,Cửa hàng,5,12000000,60000000
+206,2025-06-05,TP. Hồ Chí Minh,Phụ kiện,Ốp lưng,Cửa hàng,4,150000,600000
+207,2025-06-07,Hà Nội,Phụ kiện,Sạc nhanh 65W,Đại lý,1,450000,450000
+208,2025-06-07,Đà Nẵng,Điện thoại,Zphone X,Cửa hàng,5,12000000,60000000
+209,2025-06-07,TP. Hồ Chí Minh,Phụ kiện,Ốp lưng,Cửa hàng,1,150000,150000
+210,2025-06-08,Hà Nội,Phụ kiện,Ốp lưng,Cửa hàng,5,150000,750000
+211,2025-06-09,TP. Hồ Chí Minh,Điện thoại,Zphone X,Đại lý,4,12000000,48000000
+212,2025-06-10,Đà Nẵng,Điện thoại,Zphone X,Online,5,12000000,60000000
+213,2025-06-11,TP. Hồ Chí Minh,Điện thoại,Zphone X,,1,12000000,12000000
+214,2025-06-11,Hà Nội,Điện thoại,Zphone Lite,Online,3,5500000,16500000
+215,2025-06-12,Cần Thơ,Laptop,ZBook 14,Online,3,18500000,55500000
+216,2025-06-13,Cần Thơ,Phụ kiện,Ốp lưng,Đại lý,3,150000,450000
+217,2025-06-13,Đà Nẵng,Laptop,ZBook Air,Online,4,24000000,96000000
+218,2025-06-13,Hà Nội,Phụ kiện,Sạc nhanh 65W,Cửa hàng,5,450000,2250000
+219,2025-06-15,Cần Thơ,Phụ kiện,Ốp lưng,Online,3,150000,450000
+220,2025-06-15,Đà Nẵng,Laptop,ZBook Air,Đại lý,1,24000000,24000000
+221,2025-06-16,TP. Hồ Chí Minh,Laptop,ZBook Air,Online,2,24000000,48000000
+222,2025-06-16,Hải Phòng,Phụ kiện,Sạc nhanh 65W,Online,5,450000,2250000
+223,2025-06-17,Hà Nội,Điện thoại,Zphone X,Cửa hàng,3,12000000,36000000
+224,2025-06-18,Cần Thơ,Laptop,ZBook 14,Đại lý,5,18500000,92500000
+225,2025-06-18,Cần Thơ,Laptop,ZBook Air,Đại lý,3,24000000,72000000
+226,2025-06-19,Hải Phòng,Laptop,ZBook 14,Online,5,18500000,92500000
+227,2025-06-19,TP. Hồ Chí Minh,Điện thoại,Zphone Lite,Cửa hàng,5,5500000,27500000
+228,2025-06-20,TP. Hồ Chí Minh,Laptop,ZBook Air,Đại lý,5,24000000,120000000
+229,2025-06-20,Cần Thơ,Điện thoại,Zphone X,Cửa hàng,3,12000000,36000000
+230,2025-06-21,Hải Phòng,Laptop,ZBook 14,Đại lý,5,18500000,92500000
+231,2025-06-21,TP. Hồ Chí Minh,Phụ kiện,Sạc nhanh 65W,Online,5,450000,2250000
+232,2025-06-22,Cần Thơ,Điện thoại,Zphone Lite,Online,1,5500000,5500000
+233,2025-06-22,Đà Nẵng,Laptop,ZBook Air,Đại lý,5,24000000,120000000
+234,2025-06-23,Đà Nẵng,Laptop,ZBook Air,Đại lý,3,24000000,72000000
+235,2025-06-23,Cần Thơ,Laptop,ZBook Air,Đại lý,4,24000000,96000000
+236,2025-06-24,TP. Hồ Chí Minh,Điện thoại,Zphone X,Cửa hàng,1,12000000,12000000
+237,2025-06-25,TP. Hồ Chí Minh,Laptop,ZBook 14,Đại lý,5,18500000,92500000
+238,2025-06-25,Đà Nẵng,Phụ kiện,Ốp lưng,Cửa hàng,3,150000,450000
+239,2025-06-25,TP. Hồ Chí Minh,Phụ kiện,Tai nghe Z1,Đại lý,1,900000,900000
+240,2025-06-25,Đà Nẵng,Laptop,ZBook Air,Cửa hàng,1,24000000,24000000
+241,2025-06-25,Cần Thơ,Phụ kiện,Ốp lưng,Online,2,150000,300000
+242,2025-06-26,Cần Thơ,Phụ kiện,Ốp lưng,Online,5,150000,750000
+243,2025-06-28,Đà Nẵng,Điện thoại,Zphone Lite,Đại lý,2,5500000,11000000
+244,2025-06-30,Đà Nẵng,Laptop,ZBook 14,Cửa hàng,4,18500000,74000000
+245,2025-07-01,Hà Nội,Phụ kiện,Ốp lưng,Cửa hàng,4,150000,600000
+246,2025-07-02,Hà Nội,Laptop,ZBook Air,Cửa hàng,3,24000000,72000000
+247,2025-07-02,Hà Nội,Laptop,ZBook Air,Online,2,24000000,48000000
+248,2025-07-03,Hải Phòng,Điện thoại,Zphone Lite,Cửa hàng,2,5500000,11000000
+249,2025-07-03,Hải Phòng,Laptop,ZBook 14,Đại lý,1,18500000,18500000
+250,2025-07-04,Cần Thơ,Laptop,ZBook Air,Online,1,24000000,24000000
+251,2025-07-05,TP. Hồ Chí Minh,Phụ kiện,Sạc nhanh 65W,Đại lý,4,450000,1800000
+252,2025-07-06,TP. Hồ Chí Minh,Phụ kiện,Sạc nhanh 65W,Cửa hàng,4,450000,1800000
+253,2025-07-06,Hà Nội,Điện thoại,Zphone Lite,Đại lý,1,5500000,5500000
+254,2025-07-06,Cần Thơ,Laptop,ZBook 14,Online,4,18500000,74000000
+255,2025-07-06,TP. Hồ Chí Minh,Laptop,ZBook 14,,2,18500000,37000000
+256,2025-07-07,Hải Phòng,Điện thoại,Zphone Lite,Cửa hàng,3,5500000,16500000
+257,2025-07-08,Cần Thơ,Laptop,ZBook 14,Đại lý,2,18500000,37000000
+258,2025-07-09,Hà Nội,Điện thoại,Zphone Lite,Cửa hàng,4,5500000,22000000
+259,2025-07-09,Hà Nội,Phụ kiện,Sạc nhanh 65W,Online,5,450000,2250000
+260,2025-07-09,Cần Thơ,Laptop,ZBook 14,Đại lý,5,18500000,92500000
+261,2025-07-09,Đà Nẵng,Điện thoại,Zphone X,Cửa hàng,4,12000000,48000000
+262,2025-07-10,Hải Phòng,Điện thoại,Zphone X,Online,3,12000000,36000000
+263,2025-07-12,Hà Nội,Phụ kiện,Sạc nhanh 65W,Cửa hàng,5,450000,2250000
+264,2025-07-12,Đà Nẵng,Phụ kiện,Ốp lưng,Đại lý,2,150000,300000
+265,2025-07-13,Hải Phòng,Laptop,ZBook 14,Đại lý,4,18500000,74000000
+266,2025-07-15,Cần Thơ,Điện thoại,Zphone Lite,Cửa hàng,5,5500000,27500000
+267,2025-07-15,Cần Thơ,Điện thoại,Zphone Lite,Đại lý,5,5500000,27500000
+268,2025-07-17,Hải Phòng,Điện thoại,Zphone X,Online,1,12000000,12000000
+269,2025-07-18,Hải Phòng,Laptop,ZBook 14,Cửa hàng,3,18500000,55500000
+270,2025-07-19,Đà Nẵng,Điện thoại,Zphone X,Cửa hàng,2,12000000,24000000
+271,2025-07-19,Hải Phòng,Laptop,ZBook Air,Cửa hàng,3,24000000,72000000
+272,2025-07-19,Hà Nội,Điện thoại,Zphone X,Cửa hàng,4,12000000,48000000
+273,2025-07-21,Cần Thơ,Laptop,ZBook 14,Online,5,18500000,92500000
+274,2025-07-21,Hải Phòng,Điện thoại,Zphone Lite,Cửa hàng,2,5500000,11000000
+275,2025-07-22,Cần Thơ,Điện thoại,Zphone Lite,Đại lý,1,5500000,5500000
+276,2025-07-24,Đà Nẵng,Phụ kiện,Sạc nhanh 65W,Online,4,450000,1800000
+277,2025-07-24,Đà Nẵng,Điện thoại,Zphone X,Online,2,12000000,24000000
+278,2025-07-28,Cần Thơ,Điện thoại,Zphone Lite,Online,5,5500000,27500000
+279,2025-07-29,Đà Nẵng,Phụ kiện,Tai nghe Z1,Cửa hàng,3,900000,2700000
+280,2025-07-30,Cần Thơ,Phụ kiện,Sạc nhanh 65W,Đại lý,5,450000,2250000
+281,2025-07-30,Cần Thơ,Laptop,ZBook Air,Cửa hàng,4,24000000,96000000
+282,2025-08-02,Hải Phòng,Laptop,ZBook Air,Online,5,24000000,120000000
+283,2025-08-03,Hà Nội,Phụ kiện,Tai nghe Z1,Online,5,900000,4500000
+284,2025-08-04,TP. Hồ Chí Minh,Laptop,ZBook Air,Online,2,24000000,48000000
+285,2025-08-04,Cần Thơ,Phụ kiện,Ốp lưng,Online,1,150000,150000
+286,2025-08-05,Cần Thơ,Phụ kiện,Tai nghe Z1,Online,1,900000,900000
+287,2025-08-06,Hải Phòng,Laptop,ZBook Air,Cửa hàng,1,24000000,24000000
+288,2025-08-09,Hải Phòng,Điện thoại,Zphone Lite,Cửa hàng,2,5500000,11000000
+289,2025-08-09,Hà Nội,Laptop,ZBook 14,Online,5,18500000,92500000
+290,2025-08-10,TP. Hồ Chí Minh,Laptop,ZBook Air,Cửa hàng,4,24000000,96000000
+291,2025-08-10,Hải Phòng,Điện thoại,Zphone Lite,,3,5500000,16500000
+292,2025-08-10,Đà Nẵng,Điện thoại,Zphone X,Đại lý,3,12000000,36000000
+293,2025-08-10,Cần Thơ,Phụ kiện,Ốp lưng,Online,1,150000,150000
+294,2025-08-11,Hải Phòng,Laptop,ZBook Air,Online,2,24000000,48000000
+295,2025-08-11,Hà Nội,Điện thoại,Zphone X,Đại lý,3,12000000,36000000
+296,2025-08-13,TP. Hồ Chí Minh,Phụ kiện,Ốp lưng,Online,4,150000,600000
+297,2025-08-14,Cần Thơ,Điện thoại,Zphone Lite,Online,4,5500000,22000000
+298,2025-08-15,Hải Phòng,Laptop,ZBook 14,Online,2,18500000,37000000
+299,2025-08-17,Cần Thơ,Điện thoại,Zphone Lite,Cửa hàng,2,5500000,11000000
+300,2025-08-21,Đà Nẵng,Điện thoại,Zphone X,Đại lý,1,12000000,12000000
+301,2025-08-21,Cần Thơ,Laptop,ZBook 14,Đại lý,3,18500000,55500000
+302,2025-08-22,Hải Phòng,Điện thoại,Zphone X,Online,3,12000000,36000000
+303,2025-08-23,Hải Phòng,Điện thoại,Zphone X,Cửa hàng,2,12000000,24000000
+304,2025-08-23,TP. Hồ Chí Minh,Phụ kiện,Sạc nhanh 65W,Online,2,450000,900000
+305,2025-08-24,Cần Thơ,Điện thoại,Zphone Lite,Cửa hàng,3,5500000,16500000
+306,2025-08-24,Đà Nẵng,Điện thoại,Zphone Lite,Cửa hàng,5,5500000,27500000
+307,2025-08-24,Hải Phòng,Laptop,ZBook Air,Đại lý,3,24000000,72000000
+308,2025-08-25,Đà Nẵng,Laptop,ZBook 14,Đại lý,3,18500000,55500000
+309,2025-08-26,TP. Hồ Chí Minh,Điện thoại,Zphone Lite,Đại lý,5,5500000,27500000
+310,2025-08-27,Hải Phòng,Điện thoại,Zphone Lite,Cửa hàng,4,5500000,22000000
+311,2025-08-27,Hải Phòng,Điện thoại,Zphone X,Đại lý,5,12000000,60000000
+312,2025-08-28,TP. Hồ Chí Minh,Laptop,ZBook Air,Cửa hàng,3,24000000,72000000
+313,2025-08-28,Đà Nẵng,Phụ kiện,Tai nghe Z1,Đại lý,4,900000,3600000
+314,2025-08-28,Hà Nội,Laptop,ZBook Air,,2,24000000,48000000
+315,2025-08-29,TP. Hồ Chí Minh,Phụ kiện,Ốp lưng,Online,4,150000,600000
+316,2025-08-30,TP. Hồ Chí Minh,Phụ kiện,Tai nghe Z1,Cửa hàng,3,900000,2700000
+317,2025-08-30,TP. Hồ Chí Minh,Phụ kiện,Ốp lưng,Cửa hàng,1,150000,150000
+318,2025-09-01,Đà Nẵng,Điện thoại,Zphone X,Đại lý,5,12000000,60000000
+319,2025-09-04,Hà Nội,Phụ kiện,Sạc nhanh 65W,Online,5,450000,2250000
+320,2025-09-04,Hà Nội,Laptop,ZBook 14,Online,2,18500000,37000000
+321,2025-09-04,Đà Nẵng,Điện thoại,Zphone Lite,Cửa hàng,4,5500000,22000000
+322,2025-09-05,Đà Nẵng,Laptop,ZBook Air,,4,24000000,96000000
+323,2025-09-06,Hà Nội,Điện thoại,Zphone X,Đại lý,3,12000000,36000000
+324,2025-09-07,Cần Thơ,Laptop,ZBook 14,Online,5,18500000,92500000
+325,2025-09-08,TP. Hồ Chí Minh,Điện thoại,Zphone X,Cửa hàng,3,12000000,36000000
+326,2025-09-08,Hải Phòng,Điện thoại,Zphone X,Cửa hàng,4,12000000,48000000
+327,2025-09-08,Hà Nội,Điện thoại,Zphone X,Cửa hàng,3,12000000,36000000
+328,2025-09-08,Đà Nẵng,Phụ kiện,Ốp lưng,Đại lý,2,150000,300000
+329,2025-09-08,Hải Phòng,Laptop,ZBook Air,Đại lý,1,24000000,24000000
+330,2025-09-08,Hà Nội,Phụ kiện,Ốp lưng,Đại lý,4,150000,600000
+331,2025-09-08,Cần Thơ,Laptop,ZBook Air,Online,1,24000000,24000000
+332,2025-09-09,Đà Nẵng,Điện thoại,Zphone Lite,Cửa hàng,1,5500000,5500000
+333,2025-09-09,Hà Nội,Phụ kiện,Tai nghe Z1,Cửa hàng,2,900000,1800000
+334,2025-09-10,Hà Nội,Laptop,ZBook 14,Cửa hàng,4,18500000,74000000
+335,2025-09-11,Hải Phòng,Laptop,ZBook Air,Cửa hàng,3,24000000,72000000
+336,2025-09-11,Đà Nẵng,Điện thoại,Zphone X,,3,12000000,36000000
+337,2025-09-12,Cần Thơ,Điện thoại,Zphone Lite,Cửa hàng,1,5500000,5500000
+338,2025-09-13,Hải Phòng,Laptop,ZBook 14,Đại lý,3,18500000,55500000
+339,2025-09-13,Hải Phòng,Laptop,ZBook 14,Đại lý,3,18500000,55500000
+340,2025-09-13,Cần Thơ,Phụ kiện,Ốp lưng,Online,5,150000,750000
+341,2025-09-16,Hải Phòng,Phụ kiện,Tai nghe Z1,Đại lý,5,900000,4500000
+342,2025-09-17,Hải Phòng,Laptop,ZBook 14,Cửa hàng,4,18500000,74000000
+343,2025-09-18,Hà Nội,Phụ kiện,Ốp lưng,Đại lý,2,150000,300000
+344,2025-09-18,Hà Nội,Điện thoại,Zphone Lite,Online,2,5500000,11000000
+345,2025-09-18,Đà Nẵng,Laptop,ZBook 14,Đại lý,2,18500000,37000000
+346,2025-09-19,Hà Nội,Laptop,ZBook 14,Đại lý,4,18500000,74000000
+347,2025-09-20,Hà Nội,Điện thoại,Zphone Lite,Đại lý,5,5500000,27500000
+348,2025-09-20,Hà Nội,Laptop,ZBook Air,Online,4,24000000,96000000
+349,2025-09-21,Hà Nội,Điện thoại,Zphone X,Online,1,12000000,12000000
+350,2025-09-22,TP. Hồ Chí Minh,Điện thoại,Zphone X,Cửa hàng,5,12000000,60000000
+351,2025-09-22,TP. Hồ Chí Minh,Laptop,ZBook Air,Đại lý,2,24000000,48000000
+352,2025-09-24,TP. Hồ Chí Minh,Phụ kiện,Tai nghe Z1,Cửa hàng,2,900000,1800000
+353,2025-09-24,Đà Nẵng,Phụ kiện,Sạc nhanh 65W,Online,3,450000,1350000
+354,2025-09-24,Cần Thơ,Điện thoại,Zphone Lite,Đại lý,5,5500000,27500000
+355,2025-09-24,Cần Thơ,Laptop,ZBook 14,Cửa hàng,4,18500000,74000000
+356,2025-09-24,Hà Nội,Điện thoại,Zphone X,Cửa hàng,1,12000000,12000000
+357,2025-09-24,Đà Nẵng,Điện thoại,Zphone Lite,Cửa hàng,3,5500000,16500000
+358,2025-09-25,Cần Thơ,Laptop,ZBook 14,Đại lý,3,18500000,55500000
+359,2025-09-25,Hải Phòng,Điện thoại,Zphone X,Online,3,12000000,36000000
+360,2025-09-26,Đà Nẵng,Laptop,ZBook 14,Online,5,18500000,92500000
+361,2025-09-26,TP. Hồ Chí Minh,Laptop,ZBook 14,Cửa hàng,5,18500000,92500000
+362,2025-09-26,Hải Phòng,Laptop,ZBook 14,Cửa hàng,4,18500000,74000000
+363,2025-09-26,Hải Phòng,Điện thoại,Zphone X,Đại lý,3,12000000,36000000
+364,2025-09-27,TP. Hồ Chí Minh,Laptop,ZBook 14,Online,2,18500000,37000000
+365,2025-09-28,TP. Hồ Chí Minh,Phụ kiện,Tai nghe Z1,Cửa hàng,1,900000,900000
+366,2025-09-28,Đà Nẵng,Điện thoại,Zphone X,Cửa hàng,2,12000000,24000000
+367,2025-09-28,TP. Hồ Chí Minh,Laptop,ZBook Air,Đại lý,3,24000000,72000000
+368,2025-09-29,Cần Thơ,Điện thoại,Zphone Lite,Cửa hàng,1,5500000,5500000
+369,2025-09-29,Hà Nội,Phụ kiện,Ốp lưng,Online,2,150000,300000
+370,2025-09-30,TP. Hồ Chí Minh,Laptop,ZBook Air,Online,2,24000000,48000000
+371,2025-09-30,Hà Nội,Laptop,ZBook Air,Online,4,24000000,96000000
+372,2025-10-03,Cần Thơ,Phụ kiện,Sạc nhanh 65W,Cửa hàng,5,450000,2250000
+373,2025-10-03,Hà Nội,Phụ kiện,Ốp lưng,Đại lý,1,150000,150000
+374,2025-10-04,TP. Hồ Chí Minh,Laptop,ZBook Air,Đại lý,5,24000000,120000000
+375,2025-10-04,Cần Thơ,Điện thoại,Zphone Lite,Đại lý,5,5500000,27500000
+376,2025-10-04,Cần Thơ,Điện thoại,Zphone Lite,Đại lý,2,5500000,11000000
+377,2025-10-06,Hải Phòng,Laptop,ZBook Air,Đại lý,2,24000000,48000000
+378,2025-10-06,Đà Nẵng,Laptop,ZBook Air,Cửa hàng,3,24000000,72000000
+379,2025-10-07,Đà Nẵng,Điện thoại,Zphone Lite,Đại lý,4,5500000,22000000
+380,2025-10-08,Cần Thơ,Laptop,ZBook 14,Đại lý,1,18500000,18500000
+381,2025-10-08,Hà Nội,Điện thoại,Zphone X,Đại lý,5,12000000,60000000
+382,2025-10-09,Hải Phòng,Laptop,ZBook 14,Cửa hàng,2,18500000,37000000
+383,2025-10-09,Hà Nội,Điện thoại,Zphone X,Đại lý,4,12000000,48000000
+384,2025-10-10,TP. Hồ Chí Minh,Laptop,ZBook 14,Cửa hàng,3,18500000,55500000
+385,2025-10-10,Đà Nẵng,Điện thoại,Zphone X,Cửa hàng,2,12000000,24000000
+386,2025-10-11,Cần Thơ,Điện thoại,Zphone X,Online,2,12000000,24000000
+387,2025-10-12,Cần Thơ,Phụ kiện,Tai nghe Z1,Online,5,900000,4500000
+388,2025-10-12,Hà Nội,Điện thoại,Zphone Lite,Đại lý,4,5500000,22000000
+389,2025-10-12,Cần Thơ,Laptop,ZBook Air,Cửa hàng,4,24000000,96000000
+390,2025-10-13,Đà Nẵng,Phụ kiện,Tai nghe Z1,Online,4,900000,3600000
+391,2025-10-15,Hà Nội,Điện thoại,Zphone Lite,Online,5,5500000,27500000
+392,2025-10-15,Hải Phòng,Phụ kiện,Tai nghe Z1,Đại lý,4,900000,3600000
+393,2025-10-16,Cần Thơ,Phụ kiện,Sạc nhanh 65W,Online,4,450000,1800000
+394,2025-10-17,Đà Nẵng,Laptop,ZBook 14,Đại lý,5,18500000,92500000
+395,2025-10-21,Hải Phòng,Phụ kiện,Ốp lưng,Cửa hàng,4,150000,600000
+396,2025-10-22,Đà Nẵng,Điện thoại,Zphone X,Cửa hàng,1,12000000,12000000
+397,2025-10-23,Đà Nẵng,Điện thoại,Zphone X,Cửa hàng,5,12000000,60000000
+398,2025-10-23,Hải Phòng,Điện thoại,Zphone Lite,Đại lý,5,5500000,27500000
+399,2025-10-23,Đà Nẵng,Điện thoại,Zphone X,Cửa hàng,3,12000000,36000000
+400,2025-10-26,Đà Nẵng,Phụ kiện,Tai nghe Z1,Đại lý,3,900000,2700000

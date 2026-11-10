@@ -1,0 +1,100 @@
+{
+  "properties": {
+    "approx_unique": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Số giá trị khác nhau",
+      "title": "Approx Unique"
+    },
+    "dtype": {
+      "description": "Kiểu khai báo trong SQLite: INTEGER, REAL, TEXT, BLOB, ... (có thể rỗng-> ANY)",
+      "title": "Dtype",
+      "type": "string"
+    },
+    "examples": {
+      "description": "Vài giá trị mẫu",
+      "items": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "integer"
+          },
+          {
+            "type": "number"
+          },
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "title": "Examples",
+      "type": "array"
+    },
+    "max": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Giá trị lớn nhất (dạng chuỗi)",
+      "title": "Max"
+    },
+    "min": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Giá trị nhỏ nhất (dạng chuỗi)",
+      "title": "Min"
+    },
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "null_pct": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Tỉ lệ NULL (0-100)",
+      "title": "Null Pct"
+    }
+  },
+  "required": [
+    "name",
+    "dtype",
+    "null_pct",
+    "approx_unique",
+    "min",
+    "max",
+    "examples"
+  ],
+  "title": "ColumnProfile",
+  "type": "object"
+}

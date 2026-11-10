@@ -1,0 +1,173 @@
+{
+  "$defs": {
+    "ErrorInfo": {
+      "properties": {
+        "code": {
+          "description": "Mã lỗi máy đọc được, ví dụ: dataset_not_found",
+          "title": "Code",
+          "type": "string"
+        },
+        "details": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Details"
+        },
+        "message": {
+          "description": "Mô tả lỗi cho người đọc",
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "message",
+        "details"
+      ],
+      "title": "ErrorInfo",
+      "type": "object"
+    },
+    "TableResult": {
+      "properties": {
+        "columns": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Columns",
+          "type": "array"
+        },
+        "dtypes": {
+          "description": "Kiểu suy ra từ giá trị (INTEGER, REAL, TEXT, BLOB), cùng thứ tự với `columns`",
+          "items": {
+            "type": "string"
+          },
+          "title": "Dtypes",
+          "type": "array"
+        },
+        "row_count": {
+          "description": "Số dòng trong `rows`",
+          "title": "Row Count",
+          "type": "integer"
+        },
+        "rows": {
+          "items": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "type": "array"
+          },
+          "title": "Rows",
+          "type": "array"
+        },
+        "truncated": {
+          "description": "True nếu kết quả bị cắt vì vượt giới hạn số dòng",
+          "title": "Truncated",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "columns",
+        "dtypes",
+        "rows",
+        "row_count",
+        "truncated"
+      ],
+      "title": "TableResult",
+      "type": "object"
+    }
+  },
+  "description": "Kết quả baseline NL2SQL một lượt: LLM sinh SQL -> chạy chỉ-đọc trên SQLite.",
+  "properties": {
+    "dataset_id": {
+      "title": "Dataset Id",
+      "type": "string"
+    },
+    "elapsed_ms": {
+      "title": "Elapsed Ms",
+      "type": "integer"
+    },
+    "error": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ErrorInfo"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "no_sql_generated | sql_invalid | sql_execution_failed; null nếu thành công"
+    },
+    "question": {
+      "title": "Question",
+      "type": "string"
+    },
+    "raw_output": {
+      "description": "Nguyên văn output của LLM (để debug prompt/model)",
+      "title": "Raw Output",
+      "type": "string"
+    },
+    "schema_version": {
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "sql": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "SQL trích ra từ output của LLM; null nếu không trích được",
+      "title": "Sql"
+    },
+    "table": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/TableResult"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "Kết quả chạy SQL; null nếu SQL lỗi"
+    }
+  },
+  "required": [
+    "schema_version",
+    "dataset_id",
+    "question",
+    "sql",
+    "raw_output",
+    "table",
+    "error",
+    "elapsed_ms"
+  ],
+  "title": "NL2SQLResponse",
+  "type": "object"
+}

@@ -1,0 +1,47 @@
+{
+  "description": "Một lần agent gọi tool — để UI hiển thị 'agent đã làm gì'.",
+  "properties": {
+    "arguments": {
+      "additionalProperties": true,
+      "title": "Arguments",
+      "type": "object"
+    },
+    "duration_ms": {
+      "title": "Duration Ms",
+      "type": "integer"
+    },
+    "index": {
+      "description": "Thứ tự bước, bắt đầu từ 1",
+      "title": "Index",
+      "type": "integer"
+    },
+    "observation_preview": {
+      "description": "300 ký tự đầu của kết quả tool (hoặc thông báo lỗi)",
+      "title": "Observation Preview",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "ok",
+        "error"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "tool": {
+      "description": "Tên tool, xem GET /api/v1/tools",
+      "title": "Tool",
+      "type": "string"
+    }
+  },
+  "required": [
+    "index",
+    "tool",
+    "arguments",
+    "status",
+    "observation_preview",
+    "duration_ms"
+  ],
+  "title": "AgentStep",
+  "type": "object"
+}

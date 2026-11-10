@@ -1,0 +1,322 @@
+{
+  "$defs": {
+    "AgentStep": {
+      "description": "Một lần agent gọi tool — để UI hiển thị 'agent đã làm gì'.",
+      "properties": {
+        "arguments": {
+          "additionalProperties": true,
+          "title": "Arguments",
+          "type": "object"
+        },
+        "duration_ms": {
+          "title": "Duration Ms",
+          "type": "integer"
+        },
+        "index": {
+          "description": "Thứ tự bước, bắt đầu từ 1",
+          "title": "Index",
+          "type": "integer"
+        },
+        "observation_preview": {
+          "description": "300 ký tự đầu của kết quả tool (hoặc thông báo lỗi)",
+          "title": "Observation Preview",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "ok",
+            "error"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "tool": {
+          "description": "Tên tool, xem GET /api/v1/tools",
+          "title": "Tool",
+          "type": "string"
+        }
+      },
+      "required": [
+        "index",
+        "tool",
+        "arguments",
+        "status",
+        "observation_preview",
+        "duration_ms"
+      ],
+      "title": "AgentStep",
+      "type": "object"
+    },
+    "ChartSpec": {
+      "description": "Đặc tả biểu đồ trung lập thư viện: frontend tự map sang Chart.js / ECharts / Recharts...",
+      "properties": {
+        "chart_type": {
+          "enum": [
+            "bar",
+            "line",
+            "pie",
+            "scatter"
+          ],
+          "title": "Chart Type",
+          "type": "string"
+        },
+        "color": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Cột phân nhóm màu/series, nếu có",
+          "title": "Color"
+        },
+        "data": {
+          "description": "Mỗi phần tử là một dòng: {tên_cột: giá_trị}",
+          "items": {
+            "additionalProperties": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "type": "object"
+          },
+          "title": "Data",
+          "type": "array"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "x": {
+          "description": "Tên cột trục x (hoặc nhãn với pie)",
+          "title": "X",
+          "type": "string"
+        },
+        "y": {
+          "description": "Tên cột trục y (giá trị số)",
+          "title": "Y",
+          "type": "string"
+        }
+      },
+      "required": [
+        "chart_type",
+        "title",
+        "x",
+        "y",
+        "color",
+        "data"
+      ],
+      "title": "ChartSpec",
+      "type": "object"
+    },
+    "ErrorInfo": {
+      "properties": {
+        "code": {
+          "description": "Mã lỗi máy đọc được, ví dụ: dataset_not_found",
+          "title": "Code",
+          "type": "string"
+        },
+        "details": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Details"
+        },
+        "message": {
+          "description": "Mô tả lỗi cho người đọc",
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "message",
+        "details"
+      ],
+      "title": "ErrorInfo",
+      "type": "object"
+    },
+    "TableResult": {
+      "properties": {
+        "columns": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Columns",
+          "type": "array"
+        },
+        "dtypes": {
+          "description": "Kiểu suy ra từ giá trị (INTEGER, REAL, TEXT, BLOB), cùng thứ tự với `columns`",
+          "items": {
+            "type": "string"
+          },
+          "title": "Dtypes",
+          "type": "array"
+        },
+        "row_count": {
+          "description": "Số dòng trong `rows`",
+          "title": "Row Count",
+          "type": "integer"
+        },
+        "rows": {
+          "items": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "type": "array"
+          },
+          "title": "Rows",
+          "type": "array"
+        },
+        "truncated": {
+          "description": "True nếu kết quả bị cắt vì vượt giới hạn số dòng",
+          "title": "Truncated",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "columns",
+        "dtypes",
+        "rows",
+        "row_count",
+        "truncated"
+      ],
+      "title": "TableResult",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "answer": {
+      "description": "Câu trả lời cuối cùng bằng ngôn ngữ tự nhiên",
+      "title": "Answer",
+      "type": "string"
+    },
+    "chart": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ChartSpec"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Biểu đồ, nếu agent tạo"
+    },
+    "dataset_id": {
+      "title": "Dataset Id",
+      "type": "string"
+    },
+    "elapsed_ms": {
+      "title": "Elapsed Ms",
+      "type": "integer"
+    },
+    "error": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ErrorInfo"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Có giá trị khi agent chưa hoàn thành (vd: max_steps_exceeded)"
+    },
+    "schema_version": {
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "session_id": {
+      "title": "Session Id",
+      "type": "string"
+    },
+    "sql": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Câu SQL thành công gần nhất (để hiển thị)",
+      "title": "Sql"
+    },
+    "steps": {
+      "items": {
+        "$ref": "#/$defs/AgentStep"
+      },
+      "title": "Steps",
+      "type": "array"
+    },
+    "table": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/TableResult"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Bảng kết quả gần nhất"
+    }
+  },
+  "required": [
+    "schema_version",
+    "session_id",
+    "dataset_id",
+    "answer",
+    "sql",
+    "table",
+    "chart",
+    "steps",
+    "error",
+    "elapsed_ms"
+  ],
+  "title": "ChatResponse",
+  "type": "object"
+}

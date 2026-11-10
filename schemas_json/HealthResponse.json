@@ -1,0 +1,32 @@
+{
+  "properties": {
+    "llm_provider": {
+      "description": "mock | openai_compat",
+      "title": "Llm Provider",
+      "type": "string"
+    },
+    "schema_version": {
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "status": {
+      "default": "ok",
+      "title": "Status",
+      "type": "string"
+    },
+    "version": {
+      "description": "Phiên bản app",
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "status",
+    "version",
+    "llm_provider",
+    "schema_version"
+  ],
+  "title": "HealthResponse",
+  "type": "object"
+}

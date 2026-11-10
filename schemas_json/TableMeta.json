@@ -1,0 +1,178 @@
+{
+  "$defs": {
+    "ColumnProfile": {
+      "properties": {
+        "approx_unique": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Số giá trị khác nhau",
+          "title": "Approx Unique"
+        },
+        "dtype": {
+          "description": "Kiểu khai báo trong SQLite: INTEGER, REAL, TEXT, BLOB, ... (có thể rỗng-> ANY)",
+          "title": "Dtype",
+          "type": "string"
+        },
+        "examples": {
+          "description": "Vài giá trị mẫu",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": "Examples",
+          "type": "array"
+        },
+        "max": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Giá trị lớn nhất (dạng chuỗi)",
+          "title": "Max"
+        },
+        "min": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Giá trị nhỏ nhất (dạng chuỗi)",
+          "title": "Min"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "null_pct": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Tỉ lệ NULL (0-100)",
+          "title": "Null Pct"
+        }
+      },
+      "required": [
+        "name",
+        "dtype",
+        "null_pct",
+        "approx_unique",
+        "min",
+        "max",
+        "examples"
+      ],
+      "title": "ColumnProfile",
+      "type": "object"
+    },
+    "ForeignKey": {
+      "properties": {
+        "column": {
+          "description": "Cột của bảng hiện tại",
+          "title": "Column",
+          "type": "string"
+        },
+        "ref_column": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Null nếu khoá ngoại trỏ ngầm tới khoá chính",
+          "title": "Ref Column"
+        },
+        "ref_table": {
+          "title": "Ref Table",
+          "type": "string"
+        }
+      },
+      "required": [
+        "column",
+        "ref_table",
+        "ref_column"
+      ],
+      "title": "ForeignKey",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "columns": {
+      "items": {
+        "$ref": "#/$defs/ColumnProfile"
+      },
+      "title": "Columns",
+      "type": "array"
+    },
+    "foreign_keys": {
+      "items": {
+        "$ref": "#/$defs/ForeignKey"
+      },
+      "title": "Foreign Keys",
+      "type": "array"
+    },
+    "n_rows": {
+      "title": "N Rows",
+      "type": "integer"
+    },
+    "name": {
+      "description": "Tên bảng dùng trong SQL",
+      "title": "Name",
+      "type": "string"
+    },
+    "primary_key": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Primary Key",
+      "type": "array"
+    }
+  },
+  "required": [
+    "name",
+    "n_rows",
+    "columns",
+    "primary_key",
+    "foreign_keys"
+  ],
+  "title": "TableMeta",
+  "type": "object"
+}

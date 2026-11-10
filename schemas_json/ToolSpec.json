@@ -1,0 +1,26 @@
+{
+  "description": "Mô tả một tool (trả về bởi GET /api/v1/tools, và gửi cho LLM).",
+  "properties": {
+    "description": {
+      "title": "Description",
+      "type": "string"
+    },
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "parameters": {
+      "additionalProperties": true,
+      "description": "JSON Schema của tham số",
+      "title": "Parameters",
+      "type": "object"
+    }
+  },
+  "required": [
+    "name",
+    "description",
+    "parameters"
+  ],
+  "title": "ToolSpec",
+  "type": "object"
+}

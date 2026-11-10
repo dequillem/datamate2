@@ -1,0 +1,15 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "sql": {
+      "description": "MỘT câu SQLite chỉ-đọc: SELECT hoặc WITH ... SELECT, chỉ dùng bảng của dataset.",
+      "title": "Sql",
+      "type": "string"
+    }
+  },
+  "required": [
+    "sql"
+  ],
+  "title": "RunSqlInput",
+  "type": "object"
+}

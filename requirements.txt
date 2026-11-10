@@ -1,0 +1,9 @@
+# Đã ghim phiên bản (đã test cùng nhau) để schemas_json/openapi.json sinh ra giống nhau trên mọi máy.
+# Nâng phiên bản thì chạy lại: python scripts/export_schemas.py && pytest
+fastapi==0.162.1
+uvicorn[standard]==0.54.0
+pydantic==2.14.3
+pydantic-settings==2.16.2
+sqlglot==30.30.0
+httpx==0.28.1
+python-multipart==0.0.33
