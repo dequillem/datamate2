@@ -34,6 +34,8 @@ def build_llm(settings: Settings) -> LLMClient:
     """Chọn LLM theo cấu hình. Muốn thêm provider khác: viết class theo app.llm.base.LLMClient rồi thêm nhánh ở đây."""
     if settings.llm_provider == "openai_compat":
         return OpenAICompatLLM(
+            http_method=settings.llm_http_method,
+            api_path=settings.llm_api_path,
             base_url=settings.llm_base_url,
             api_key=settings.llm_api_key.get_secret_value() if settings.llm_api_key else None,
             model=settings.llm_model,

@@ -33,6 +33,8 @@ class Settings(BaseSettings):
     llm_temperature: float | None = None  # None = dùng mặc định của provider
     llm_max_tokens: int | None = None  # chặn SLM nói lan man; None = mặc định của server
     llm_extra_headers: dict[str, str] = {}  # vd Modal proxy auth: {"Modal-Key": "...", "Modal-Secret": "..."}
+    llm_http_method: Literal["GET", "POST"] = "POST"
+    llm_api_path: str = "/chat/completions"
 
     @property
     def sample_dir(self) -> Path:

@@ -1,0 +1,27 @@
+services:
+  api:
+    build:
+      context: .
+      target: runtime
+    image: datamate:latest
+    ports:
+      - "8000:8000"
+    # Cần file .env (copy từ .env.example). Mặc định LLM_PROVIDER=mock nên chạy được không cần API key.
+    env_file: .env
+    environment:
+      # file upload nằm trong volume để không mất khi tạo lại container
+      DATA_DIR: /app/data
+    volumes:
+      - uploads:/app/data/uploads
+    restart: unless-stopped
+
+  # docker compose --profile test run --rm test   -> chạy pytest trong container
+  test:
+    build:
+      context: .
+      target: test
+    profiles: ["test"]
+    command: python -m pytest -q
+
+volumes:
+  uploads:

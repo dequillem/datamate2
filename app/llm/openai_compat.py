@@ -31,6 +31,8 @@ class OpenAICompatLLM:
         temperature: float | None = None,
         max_tokens: int | None = None,
         extra_headers: dict[str, str] | None = None,
+        http_method: str = "POST",
+        api_path: str = "/chat/completions",
         max_retries: int = 2,
         retry_backoff: float = 1.0,
         client: httpx.Client | None = None,
@@ -41,6 +43,10 @@ class OpenAICompatLLM:
         self._temperature = temperature
         self._max_tokens = max_tokens
         self._extra_headers = dict(extra_headers or {})
+        self._http_method = http_method.upper().strip()
+        self._api_path = "/" + api_path.strip("/")
+        if self._http_method not in {"GET", "POST"}:
+            raise ValueError("LLM_HTTP_METHOD must be GET or POST")
         self._max_retries = max_retries
         self._retry_backoff = retry_backoff
         self._client = client or httpx.Client(timeout=timeout)
@@ -67,7 +73,7 @@ class OpenAICompatLLM:
             ]
             payload["tool_choice"] = "auto"
 
-        resp = self._post_with_retry(f"{self._base_url}/chat/completions", payload)
+        resp = self._request_with_retry(f"{self._base_url}{self._api_path}", payload)
         try:
             raw = resp.json()["choices"][0]["message"]
         except (ValueError, KeyError, IndexError, TypeError) as e:
@@ -79,7 +85,7 @@ class OpenAICompatLLM:
         ]
         return Message(role="assistant", content=self._text(raw.get("content")), tool_calls=calls)
 
-    def _post_with_retry(self, url: str, payload: dict[str, Any]) -> httpx.Response:
+    def _request_with_retry(self, url: str, payload: dict[str, Any]) -> httpx.Response:
         headers = {"Content-Type": "application/json", **self._extra_headers}
         if self._api_key:
             headers["Authorization"] = f"Bearer {self._api_key}"
@@ -87,13 +93,19 @@ class OpenAICompatLLM:
         last_error = "unknown error"
         for attempt in range(self._max_retries + 1):
             try:
-                resp = self._client.post(url, json=payload, headers=headers)
+                resp = self._client.request(
+                    self._http_method,
+                    url,
+                    json=payload if self._http_method == "POST" else None,
+                    headers=headers,
+                    params=payload if self._http_method == "GET" else None,
+                )
             except httpx.HTTPError as e:
                 last_error = f"request failed: {e}"
             else:
                 if resp.status_code < 400:
                     return resp
-                last_error = f"HTTP {resp.status_code}: {resp.text[:300]}"
+                last_error = f"{self._http_method} {url} -> HTTP {resp.status_code}: {resp.text[:300]}"
                 if resp.status_code not in _RETRY_STATUS:
                     break
             if attempt < self._max_retries:
